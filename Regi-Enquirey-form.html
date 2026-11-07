@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and Enquiry Form</title>
+    <link rel="stylesheet" href="CSS.css">
+    <link rel="stylesheet" href="Form Css.css">
+</head>
+<body>
+    <header>
+        <br>
+        <h1>Registration and Enquiry Form</h1>
+        <br>
+        <a href="PROJ HOME.html" class="Logo-link">
+        <img src="Logo.png" alt="My Website Logo" class="Logo-link">
+        </a>
+    </header>
+        <h3>Please fill in the details below :</h3>
+           <form id="enquiryForm" action="Thank-you-page.html" method="get">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required /><br><br>
+
+                <label for="Number">Number:</label>
+                <input type="number" id="Number" name="Number" required /><br><br>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="16" max="99" required /><br><br>
+
+                <label>Gender:</label>
+                <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Other</label><br><br>
+                </div>
+
+                <label for="about">About:</label>
+                <select id="about" name="about" required>
+                    <option value="">Select an Option</option>
+                    <option value="Finance and Education">Finance and Education</option>
+                    <option value="Healthcare and Chatbots">Healthcare and Chatbots</option>
+                    <option value="Autocars">Autocars</option>
+                    <option value="Positive Impact Of AI">Positive Impact Of AI</option>
+                    <option value="Negative Impact Of AI">Negative Impact Of AI</option>
+                </select><br><br>
+
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select a country</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">UK</option>
+                    <option value="Australia">Australia</option>
+                    <option value="India">India</option>
+                    <option value="Singapore">Singapore</option>
+                </select><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="enquiry">Enquiry:</label>
+                <textarea id="enquiry" name="enquiry" required></textarea><br><br>
+
+                <button type="reset"><strong>Clear</strong></button><button type="submit"><strong>Submit</strong></button>
+                <p id="formMessage"></p>
+        </form>
+        <script src="Enquiry-form.js"></script>
+</body>
+</html>

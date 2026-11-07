@@ -1,0 +1,72 @@
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="number"],
+form select,
+form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+form textarea {
+  max-width: 500px;
+  height: 250px;
+  resize: vertical;
+}
+
+form input[type="number"] {
+  max-width: 200px;
+}
+
+.radio-group label {
+    display: inline;
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+form input[type="radio"] {
+    margin-left: 0;
+}
+
+
+button[type="submit"], 
+button[type="reset"] {
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  background-color: #3399cc;
+}
+
+button[type="submit"]:hover {
+  background-color: #0e927e;
+}
+
+button[type="reset"] {
+  background-color: #888;
+}
+
+button[type="reset"]:hover {
+  background-color: #666;
+}
+
+#formMessage.error { color: #c0392b; font-weight: bold; }
+#formMessage.success { color: #1e8449; font-weight: bold; }
