@@ -78,6 +78,13 @@ footer {
   position: absolute;
   top: 10px;
   left: 10px;
+  display: inline-block;
   width: 100px;
   height: auto;
-}  
+}
+
+.Logo-link img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
