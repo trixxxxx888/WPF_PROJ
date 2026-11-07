@@ -13,6 +13,6 @@ const timer = setInterval(function () {
   countdown.textContent = seconds;
   if (seconds <= 0) {
     clearInterval(timer);
-    window.location.href = "PROJ HOME.html";
+    window.location.href = "index.html";
   }
 }, 1000);

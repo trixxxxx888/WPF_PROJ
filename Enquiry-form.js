@@ -18,7 +18,7 @@ form.addEventListener("submit", function (event) {
 
   showMessage("Enquiry submitted successfully! Redirecting...", "success");
   setTimeout(function () {
-    form.submit(); // sends the form data to Thank-you-page.html
+    form.submit(); // sends the form data to thank-you-page.html
   }, 1500);
 });
 
