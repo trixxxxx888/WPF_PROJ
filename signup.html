@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="webcss.css">
+</head>
+<body>
+    <header class="signup-header">
+        <h1>Create an Account</h1>
+        <a href="index.html" class="Logo-link">
+            <img src="logo.png" alt="My Website Logo" class="Logo-link">
+        </a>
+        <a href="index.html" class="signup-link">Home</a>
+    </header>
+    <main>
+        <section class="content-box signup-box">
+            <h2>Sign Up</h2>
+            <p>Fill in your details to get started.</p>
+            <form method="post">
+                <label for="full-name">Full name</label>
+                <input type="text" id="full-name" name="full-name" autocomplete="name" required>
+
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" autocomplete="new-password" minlength="8" required>
+                <small>Use at least 8 characters.</small>
+
+                <button type="submit">Create Account</button>
+            </form>
+            <p class="form-note">This demo form needs a server-side sign-up service to create an account.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 ITFS Web Programming Fundamentals Group Assignment.</p>
+    </footer>
+</body>
+</html>
