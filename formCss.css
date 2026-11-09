@@ -1,7 +1,27 @@
 form label {
   display: block;
   margin-top: 15px;
-  font-weight: bold;
+  color: #e7f2f5;
+  font-weight: 600;
+}
+
+form#enquiryForm {
+  max-width: 760px;
+  margin: 20px auto;
+  padding: 24px;
+  border: 1px solid rgba(91, 196, 218, 0.24);
+  border-radius: 8px;
+  background: rgba(5, 23, 31, 0.92);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
+  box-sizing: border-box;
+}
+
+body > h3 {
+  max-width: 760px;
+  margin: 20px auto 0;
+  padding: 0 24px;
+  color: #8fe6f5;
+  box-sizing: border-box;
 }
 
 form input[type="text"],
@@ -13,10 +33,24 @@ form textarea {
   width: 100%;
   max-width: 500px;
   padding: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #42616b;
   border-radius: 4px;
+  background-color: #0b2029;
+  color: #f0f8fa;
   box-sizing: border-box;
   font-size: 1rem;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  outline: 2px solid #56cde3;
+  outline-offset: 1px;
+}
+
+form select option {
+  background-color: #0b2029;
+  color: #f0f8fa;
 }
 
 form textarea {
@@ -53,7 +87,7 @@ button[type="reset"] {
 }
 
 button[type="submit"] {
-  background-color: #3399cc;
+  background-color: #117e9a;
 }
 
 button[type="submit"]:hover {
@@ -61,12 +95,23 @@ button[type="submit"]:hover {
 }
 
 button[type="reset"] {
-  background-color: #888;
+  background-color: #455a64;
 }
 
 button[type="reset"]:hover {
-  background-color: #666;
+  background-color: #607d8b;
 }
 
-#formMessage.error { color: #c0392b; font-weight: bold; }
-#formMessage.success { color: #1e8449; font-weight: bold; }
+#formMessage.error { color: #ff9a9a; font-weight: bold; }
+#formMessage.success { color: #88e3b2; font-weight: bold; }
+
+@media (max-width: 600px) {
+  body > h3 {
+    padding: 0 20px;
+  }
+
+  form#enquiryForm {
+    margin: 20px;
+    padding: 18px;
+  }
+}
