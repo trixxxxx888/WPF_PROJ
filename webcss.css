@@ -142,6 +142,20 @@ footer {
     background-color: #0a6f60;
 }
 
+.signup-page-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+    width: 100px;
+}
+
+.signup-page-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .signup-box form {
     max-width: 480px;
     margin: 20px auto 0;
@@ -220,6 +234,47 @@ footer {
 
 .success-home-link:hover {
     background-color: #0e927e;
+}
+
+.thank-you-main {
+    display: flex;
+    align-items: center;
+    min-height: 55vh;
+}
+
+.thank-you-card {
+    width: 100%;
+    padding: 48px 30px;
+}
+
+.thank-you-icon {
+    display: grid;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 18px;
+    place-items: center;
+    border: 2px solid #56cde3;
+    border-radius: 50%;
+    color: #8fe6f5;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.thank-you-card h2 {
+    margin: 8px 0;
+}
+
+.redirect-message {
+    margin-top: 24px;
+    color: #b7cbd1;
+}
+
+.redirect-message span {
+    display: inline-block;
+    min-width: 1.5em;
+    color: #8fe6f5;
+    font-size: 1.2em;
+    font-weight: 700;
 }
 
 @media (max-width: 600px) {

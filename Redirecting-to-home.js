@@ -2,7 +2,7 @@ const params = new URLSearchParams(window.location.search);
 const name = params.get("name");
 if (name) {
   document.getElementById("greeting").textContent =
-    "Thank you, " + name + "! Your submission has been received. We will get back to you shortly.";
+    "Thank you, " + name + "! Your enquiry has been received. We will be in touch soon.";
 }
 
 let seconds = 5;
