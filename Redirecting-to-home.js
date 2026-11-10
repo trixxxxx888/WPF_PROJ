@@ -1,7 +1,8 @@
 const params = new URLSearchParams(window.location.search);
 const name = params.get("name");
-if (name) {
-  document.getElementById("greeting").textContent =
+const greeting = document.getElementById("greeting");
+if (name && greeting) {
+  greeting.textContent =
     "Thank you, " + name + "! Your enquiry has been received. We will be in touch soon.";
 }
 

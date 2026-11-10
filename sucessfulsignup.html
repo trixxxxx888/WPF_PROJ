@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-Up Complete</title>
+    <title>Thank You</title>
     <link rel="stylesheet" href="webcss.css">
 </head>
 <body>
     <header class="signup-header">
-        <h1>Sign-Up Complete</h1>
+        <h1>Thank You!</h1>
         <a href="index.html" class="Logo-link">
             <img src="logo.png" alt="My Website Logo" class="Logo-link">
         </a>
         <a href="index.html" class="signup-link">Home</a>
     </header>
-    <main>
-        <section class="content-box success-box">
+    <main class="thank-you-main">
+        <section class="content-box success-box thank-you-card">
+            <div class="thank-you-icon" aria-hidden="true">✓</div>
             <p class="success-label">Thank you!</p>
-            <h2>Your sign-up form was submitted.</h2>
+            <h2 role="status" aria-live="polite">Your sign-up form was submitted.</h2>
             <p>This is a demo confirmation. An account is not created until a sign-up service is connected.</p>
-            <p>Returning to the home page in <span id="countdown">5</span> seconds...</p>
-            <a class="success-home-link" href="index.html">Go to Home Now</a>
+            <p class="redirect-message">Taking you back to the home page in <span id="countdown">5</span> seconds.</p>
+            <a class="success-home-link" href="index.html">Return to Home</a>
         </section>
     </main>
     <footer>
