@@ -277,13 +277,64 @@ footer {
     font-weight: 700;
 }
 
+.confirmation-header {
+    display: grid;
+    grid-template-columns: 100px minmax(0, 1fr) 100px;
+    align-items: center;
+    min-height: 104px;
+    padding: 10px 20px;
+}
+
+.confirmation-header .Logo-link {
+    position: static;
+    grid-column: 1;
+    grid-row: 1;
+    width: 100px;
+}
+
+.confirmation-header h1 {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.confirmation-header .signup-link {
+    position: static;
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+}
+
 @media (max-width: 600px) {
     body {
         background-attachment: scroll;
     }
 
+    .confirmation-header {
+        grid-template-columns: 64px minmax(0, 1fr) 64px;
+        min-height: 84px;
+        padding: 10px;
+    }
+
+    .confirmation-header .Logo-link {
+        width: 64px;
+    }
+
+    .confirmation-header h1 {
+        font-size: 1.4rem;
+    }
+
+    .confirmation-header .signup-link {
+        padding: 7px 10px;
+    }
+
     .signup-header h1 {
         padding: 42px 0 0;
+    }
+
+    .confirmation-header h1 {
+        padding: 0;
     }
 
     .signup-link {
