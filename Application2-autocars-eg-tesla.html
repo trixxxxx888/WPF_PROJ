@@ -6,61 +6,74 @@
     <title>AutoCars</title>
     <link rel="stylesheet" href="webcss.css">
 </head>
-<body>
+<body class="feature-page autocars-page">
     <header class="signup-header">
         <h1>A.I. uses in autonomous car</h1>
          <a href="index.html" class="Logo-link">
-        <img src="Logo.png" alt="My Website Logo" class="Logo-link">
+        <img src="logo.png" alt="My Website Logo">
         </a>
         <a href="signup.html" class="signup-link">Sign Up</a>
 
-        <nav>
-            <a href="application-1-health-care.html">Health Care With A.I.</a>
-            <a href="App-3-finance-education.html">Finance and Education</a>
-            <a href="impacts.html">Impacts of A.I.</a>
+        <nav class="site-navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="application-1-health-care.html">Healthcare AI</a>
+            <a href="application2-autocars-eg-tesla.html" aria-current="page">Autonomous Cars</a>
+            <a href="App-3-finance-education.html">Finance Education</a>
+            <a href="impacts.html">AI Impacts</a>
         </nav>
     </header>
     <main>
         <section class="content-box">
+            <figure class="feature-hero">
+                <img src="Autocars.png" alt="Autonomous car using artificial intelligence and advanced vehicle technology">
+            </figure>
+
             <h2>Introduction to AutoCars</h2>
             <p>AutoCars are revolutionising the automotive industry with advanced technology, electric powertrains, and autonomous driving capabilities. Companies like Tesla are leading the charge in this transformation.</p>
 
-            <h3>Key Features of Modern AutoCars</h3>
-            <ul>
-                <li><strong>Parking Assistance:</strong> Helps the driver to park safely without much driver input.</li>
-                <li><strong>Navigation:</strong>Uses GPS and AI to find the fastest route.</li>
-                <li><strong>Obstacle detection:</strong> AI detects surrounding environments such as pedestrians, other vehicles or obstacles surrounding the car.</li>
-                <li><strong>Advanced Infotainment Systems:</strong> Providing connectivity and entertainment options for drivers and passengers.</li>
-                <li><strong>Sustainable Materials:</strong> Using eco-friendly materials in vehicle manufacturing.</li>
-            </ul>
+            <section class="autocars-features">
+                <h3>Key Features of Modern AutoCars</h3>
+                <ul>
+                    <li><strong>Parking Assistance:</strong><span>Helps the driver to park safely without much driver input.</span></li>
+                    <li><strong>Navigation:</strong><span>Uses GPS and AI to find the fastest route.</span></li>
+                    <li><strong>Obstacle detection:</strong><span>AI detects surrounding environments such as pedestrians, other vehicles or obstacles surrounding the car.</span></li>
+                    <li><strong>Advanced Infotainment Systems:</strong><span>Providing connectivity and entertainment options for drivers and passengers.</span></li>
+                    <li><strong>Sustainable Materials:</strong><span>Using eco-friendly materials in vehicle manufacturing.</span></li>
+                </ul>
+            </section>
 
             <h3>Advantages and Disadvantages</h3>
-            <p><strong>Advantages:</strong></p>
-            <ul>
-                <li>Reduces human driving errors as AI does not get tired or distracted.</li>
-                <li>Makes travelling more convenient for long distances as the driver does not need to be constantly looking out for traffic, thus reducing the chances of fatigue.</li>
-                <li>Helps people who cannot drive such as elderly or disabled people as they might have slower reaction time or poor eyesight etc.</li>
-            </ul>
-            <p><strong>Disadvantages:</strong></p>
-            <ul>
-                <li>Expensive repairs such as damaged sensors and advanced computer systems can cost a lot to repair.</li>
-                <li>Can struggle with heavy rain, floods or unclear road markings due to the lack of human judgment based on experience.</li>
-                <li>Cybersecurity risks, hackers may gain access to the vehicle's computer systems accessing the owners personal information, GPS locations, travel records and control the vehicle causing accidents.</li>
-            </ul>
+            <div class="feature-topics autocars-pros-cons">
+                <section class="feature-card">
+                    <h4>Advantages:</h4>
+                    <ul>
+                        <li><span>Reduces human driving errors as AI does not get tired or distracted.</span></li>
+                        <li><span>Makes travelling more convenient for long distances as the driver does not need to be constantly looking out for traffic, thus reducing the chances of fatigue.</span></li>
+                        <li><span>Helps people who cannot drive such as elderly or disabled people as they might have slower reaction time or poor eyesight etc.</span></li>
+                    </ul>
+                </section>
+                <section class="feature-card feature-card-caution">
+                    <h4>Disadvantages:</h4>
+                    <ul>
+                        <li><span>Expensive repairs such as damaged sensors and advanced computer systems can cost a lot to repair.</span></li>
+                        <li><span>Can struggle with heavy rain, floods or unclear road markings due to the lack of human judgment based on experience.</span></li>
+                        <li><span>Cybersecurity risks, hackers may gain access to the vehicle's computer systems accessing the owners personal information, GPS locations, travel records and control the vehicle causing accidents.</span></li>
+                    </ul>
+                </section>
+            </div>
 
-            <h3>Conclusion</h3>
-            <p>AI-powered autonomous cars can make our daily lives easier, safer and more convenient. However, they may also create challenges such as unpredictable weather conditions, high costs and cybersecurity risk. Therefore, the technology should be properly tested and regulated before people fully depend on it</p>
-
-            <p style="margin-top: 20px;">
-                <em>Want to learn more? Check out the official <a href="https://www.tesla.com/" target="_blank">Tesla Website</a>.</em>
-            </p>
+            <section class="feature-conclusion">
+                <h3>Conclusion</h3>
+                <p>AI-powered autonomous cars can make our daily lives easier, safer and more convenient. However, they may also create challenges such as unpredictable weather conditions, high costs and cybersecurity risk. Therefore, the technology should be properly tested and regulated before people fully depend on it</p>
+                <p class="feature-resource"><em>Want to learn more? Check out the official <a href="https://www.tesla.com/" target="_blank" rel="noopener noreferrer">Tesla Website</a>.</em></p>
+            </section>
         </section>
     </main>
-    <nav>
-        <a href="App-3-finance-education.html">Next Page</a>
-        <a href="application-1-health-care.html">Last Page</a>
-        <a href="Regi-Enquirey-form.html">Ask Us Anything</a>
-        <a href="index.html">Back to Home</a>
+    <nav class="page-navigation" aria-label="Page navigation">
+        <a class="previous-link" href="application-1-health-care.html"><span aria-hidden="true">&larr;</span> Previous: Healthcare AI</a>
+        <a class="home-link" href="index.html">All Topics</a>
+        <a class="next-link" href="App-3-finance-education.html">Next: Finance Education <span aria-hidden="true">&rarr;</span></a>
+        <a class="contact-link" href="Regi-Enquirey-form.html">Ask a Question</a>
     </nav>
     <footer>
         <p>&copy; 2026 ITFS Web Programming Fundamentals Group Assignment.</p>

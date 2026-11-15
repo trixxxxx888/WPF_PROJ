@@ -23,26 +23,90 @@ header {
     padding: 0 110px;
 }
 
-nav {
+.site-navigation,
+.page-navigation {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 9px;
+}
+
+.site-navigation {
     margin-top: 10px;
 }
 
-nav a {
+.site-navigation a,
+.page-navigation a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
     color: #f3fbff;
-    background-color: rgba(16, 105, 131, 0.88);
-    padding: 8px 15px;
     text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s, transform 0.3s;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 
-nav a:hover {
+.site-navigation a {
+    min-height: 40px;
+    padding: 7px 16px;
+    background-color: rgba(16, 105, 131, 0.68);
+}
+
+.site-navigation a:hover,
+.site-navigation a[aria-current="page"] {
+    border-color: rgba(143, 230, 245, 0.55);
     background-color: #0e927e;
-    transform: translateY(-1px);
+    color: #fff;
+}
+
+.site-navigation a[aria-current="page"] {
+    box-shadow: 0 0 0 2px rgba(86, 205, 227, 0.14);
+}
+
+.site-navigation a:focus-visible,
+.page-navigation a:focus-visible {
+    outline: 3px solid #8fe6f5;
+    outline-offset: 3px;
+}
+
+.page-navigation {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 12px 20px;
+}
+
+.page-navigation a {
+    min-height: 44px;
+    padding: 8px 17px;
+    background: rgba(5, 23, 31, 0.88);
+    border-color: rgba(91, 196, 218, 0.36);
+}
+
+.page-navigation a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.24);
+}
+
+.page-navigation .next-link {
+    background: #0e927e;
+    border-color: #39bfa7;
+}
+
+.page-navigation .next-link:hover,
+.page-navigation .contact-link:hover {
+    background: #0a6f60;
+}
+
+.page-navigation .contact-link {
+    color: #a9eff8;
+}
+
+.page-navigation .home-link,
+.page-navigation .previous-link {
+    color: #d7e9ef;
 }
 
 main {
@@ -306,6 +370,212 @@ footer {
     justify-self: end;
 }
 
+.feature-page main {
+    max-width: 1080px;
+}
+
+.feature-page .content-box {
+    padding: 22px;
+    border-radius: 16px;
+}
+
+.feature-hero {
+    position: relative;
+    min-height: 260px;
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid rgba(143, 230, 245, 0.3);
+    border-radius: 12px;
+    background: #0b2933;
+}
+
+.feature-hero::after {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(3, 18, 25, 0.78), rgba(3, 18, 25, 0.08) 85%),
+        linear-gradient(0deg, rgba(3, 18, 25, 0.72), transparent 55%);
+    content: "";
+}
+
+.feature-hero img {
+    display: block;
+    width: 100%;
+    height: clamp(260px, 36vw, 390px);
+    object-fit: cover;
+    object-position: center 45%;
+}
+
+.feature-hero figcaption {
+    position: absolute;
+    z-index: 1;
+    right: 24px;
+    bottom: 22px;
+    left: 24px;
+    max-width: 560px;
+    color: #f3fbff;
+    font-size: clamp(1.2rem, 2.4vw, 1.8rem);
+    font-weight: 700;
+    line-height: 1.3;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+.feature-intro {
+    max-width: 760px;
+    margin: 24px auto 30px;
+    color: #d7e9ef;
+    font-size: 1.08rem;
+    text-align: center;
+}
+
+.feature-topics {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.feature-card {
+    padding: 22px;
+    border: 1px solid rgba(91, 196, 218, 0.28);
+    border-radius: 12px;
+    background: linear-gradient(145deg, rgba(15, 54, 65, 0.92), rgba(7, 32, 41, 0.92));
+}
+
+.feature-card-caution {
+    border-color: rgba(245, 190, 113, 0.3);
+    background: linear-gradient(145deg, rgba(62, 49, 36, 0.72), rgba(20, 35, 40, 0.96));
+}
+
+.feature-card h2,
+.feature-conclusion h2 {
+    margin: 0 0 18px;
+    font-size: 1.35rem;
+}
+
+.feature-card-caution h2 {
+    color: #f4cb91;
+}
+
+.feature-card ul {
+    display: grid;
+    gap: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.feature-card li {
+    margin: 0;
+    padding: 0 0 0 14px;
+    border-left: 2px solid #56cde3;
+}
+
+.feature-card-caution li {
+    border-left-color: #e6b56f;
+}
+
+.feature-card li strong,
+.feature-card li span {
+    display: block;
+}
+
+.feature-card li strong {
+    margin-bottom: 2px;
+    color: #f3fbff;
+}
+
+.feature-card li span {
+    color: #c5d9df;
+}
+
+.feature-conclusion {
+    margin-top: 20px;
+    padding: 24px;
+    border: 1px solid rgba(91, 196, 218, 0.24);
+    border-radius: 12px;
+    background: rgba(3, 18, 25, 0.55);
+}
+
+.feature-conclusion h2 {
+    margin-bottom: 8px;
+}
+
+.feature-conclusion p {
+    margin: 0;
+    color: #d7e9ef;
+}
+
+.feature-conclusion .feature-resource {
+    margin-top: 16px;
+    font-size: 0.95rem;
+}
+
+.healthcare-use-cases .feature-card p {
+    margin: 0;
+    color: #c5d9df;
+}
+
+.autocars-features {
+    margin: 22px 0;
+    padding: 22px;
+    border: 1px solid rgba(91, 196, 218, 0.28);
+    border-radius: 12px;
+    background: linear-gradient(145deg, rgba(15, 54, 65, 0.92), rgba(7, 32, 41, 0.92));
+}
+
+.autocars-features h3 {
+    margin: 0 0 18px;
+}
+
+.autocars-features ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.autocars-features li {
+    margin: 0;
+    padding-left: 14px;
+    border-left: 2px solid #56cde3;
+}
+
+.autocars-features li strong,
+.autocars-features li span {
+    display: block;
+}
+
+.autocars-features li strong,
+.autocars-pros-cons h4 {
+    margin: 0 0 3px;
+    color: #f3fbff;
+}
+
+.autocars-features li span,
+.autocars-pros-cons li span {
+    color: #c5d9df;
+}
+
+.autocars-pros-cons {
+    align-items: start;
+    margin-bottom: 22px;
+}
+
+.autocars-pros-cons h4 {
+    font-size: 1.15rem;
+}
+
+.autocars-pros-cons .feature-card-caution h4 {
+    color: #f4cb91;
+}
+
+@media (min-width: 850px) {
+    .healthcare-use-cases {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
 @media (max-width: 600px) {
     body {
         background-attachment: scroll;
@@ -340,5 +610,69 @@ footer {
     .signup-link {
         top: 10px;
         right: 10px;
+    }
+
+    .feature-page .content-box {
+        padding: 14px;
+    }
+
+    .feature-page .signup-header h1 {
+        padding: 86px 0 0;
+        font-size: 1.45rem;
+    }
+
+    .feature-hero {
+        min-height: 220px;
+    }
+
+    .feature-hero img {
+        height: 260px;
+        object-position: 58% center;
+    }
+
+    .feature-hero figcaption {
+        right: 16px;
+        bottom: 16px;
+        left: 16px;
+    }
+
+    .feature-topics {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .feature-card,
+    .feature-conclusion {
+        padding: 18px;
+    }
+
+    .autocars-features {
+        padding: 18px;
+    }
+
+    .autocars-features ul {
+        grid-template-columns: 1fr;
+    }
+
+    .site-navigation {
+        gap: 7px;
+    }
+
+    .site-navigation a {
+        min-height: 38px;
+        padding: 6px 12px;
+        font-size: 0.92rem;
+    }
+
+    .page-navigation {
+        gap: 8px;
+        padding: 12px 16px;
+    }
+
+    .page-navigation a {
+        flex: 1 1 145px;
+        padding: 8px 12px;
+        font-size: 0.92rem;
+        text-align: center;
     }
 }

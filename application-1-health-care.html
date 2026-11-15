@@ -6,22 +6,28 @@
     <title>Health Care</title>
     <link rel="stylesheet" href="webcss.css">
 </head>
-<body>
+<body class="healthcare-page feature-page">
     <header class="signup-header">
         <h1>Health Care With A.I.</h1>
          <a href="index.html" class="Logo-link">
-        <img src="Logo.png" alt="My Website Logo" class="Logo-link">
+        <img src="logo.png" alt="My Website Logo">
         </a>
         <a href="signup.html" class="signup-link">Sign Up</a>
 
-        <nav>
-            <a href="Application2-autocars-eg-tesla.html">AutoCars</a>
-            <a href="App-3-finance-education.html">Finance and Education</a>
-            <a href="impacts.html">Impacts of A.I.</a>
+        <nav class="site-navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="application-1-health-care.html" aria-current="page">Healthcare AI</a>
+            <a href="application2-autocars-eg-tesla.html">Autonomous Cars</a>
+            <a href="App-3-finance-education.html">Finance Education</a>
+            <a href="impacts.html">AI Impacts</a>
         </nav>
     </header>
     <main>
         <section class="content-box">
+            <figure class="feature-hero">
+                <img src="healthcare.png" alt="Healthcare professionals using artificial intelligence to support patient care">
+            </figure>
+
             <h2>Introduction to Health Care With A.I.</h2>
             <p>Health care is a critical aspect of modern society, ensuring the well-being and treatment of individuals. With the advancement of technology, AI has started to play a significant role in transforming the health care industry.</p>
 
@@ -29,33 +35,44 @@
             <p>Healthcare Currently, A.I is not accountable to replace the clinician, but to support them. As hospitals produce a huge amount of data such as scans, test results and patient records. A.I can use those data to mass study about it, helping doctors to identify and work faster and more accurately.</p>
 
             <h3>How can it be used:</h3>
-            <ul>
-                <li><strong>Drug discovery :</strong></li>
-                <p>Drugs discovery are very expensive and need years of lab testing. With the help of A.I, results can be predicted and A.I can predict thousands of outcomes simultaneously, wastage and time consuming can be avoided.</p>
-                <li><strong>Detection :</strong></li>
-                <p>By comparing the patient's records with millions of past cases, A.I can find the syndrome or the warning of risk such as diabetes or cancer.</p>
-                <li><strong>Reading Medical Images :</strong></li>
-                <p>By using A.I, the medical images can be read faster and more accurately. A.I can detect the abnormalities in the images and help doctors to make a diagnosis.</p>
-            </ul>
+            <section class="feature-topics healthcare-use-cases">
+                <article class="feature-card">
+                    <h2>Drug discovery :</h2>
+                    <p>Drugs discovery are very expensive and need years of lab testing. With the help of A.I, results can be predicted and A.I can predict thousands of outcomes simultaneously, wastage and time consuming can be avoided.</p>
+                </article>
+                <article class="feature-card">
+                    <h2>Detection :</h2>
+                    <p>By comparing the patient's records with millions of past cases, A.I can find the syndrome or the warning of risk such as diabetes or cancer.</p>
+                </article>
+                <article class="feature-card">
+                    <h2>Reading Medical Images :</h2>
+                    <p>By using A.I, the medical images can be read faster and more accurately. A.I can detect the abnormalities in the images and help doctors to make a diagnosis.</p>
+                </article>
+            </section>
 
-            <h3>Key Benefits of Modern Health Care</h3>
-            <p>A.I will speed up the process of detection, and results. Patients will also have the access to expert knowledge as A.I such as chatbots can have a brief explanation to the patients.</p>
+            <section class="feature-topics healthcare-considerations">
+                <article class="feature-card">
+                    <h3>Key Benefits of Modern Health Care</h3>
+                    <p>A.I will speed up the process of detection, and results. Patients will also have the access to expert knowledge as A.I such as chatbots can have a brief explanation to the patients.</p>
+                </article>
+                <article class="feature-card feature-card-caution">
+                    <h3>Key Drawbacks of Modern Health Care</h3>
+                    <p>While A.I seems to be a luxury, mistakes may occur. A.I is still not able to consistently perform with 0 mistakes, and a single mistake might harm the patient. It is also possible that patients might over believe the results of A.I(From Chatbots), and do not follow what the doctors says.</p>
+                </article>
+            </section>
 
-            <h3>Key Drawbacks of Modern Health Care</h3>
-            <p>While A.I seems to be a luxury, mistakes may occur. A.I is still not able to consistently perform with 0 mistakes, and a single mistake might harm the patient. It is also possible that patients might over believe the results of A.I(From Chatbots), and do not follow what the doctors says.</p>
-
-            <h3>Conclusion</h3>
-            <p>Healthcare shows both sides of A.I, not just benefits, but also risks that need human oversight than fully believing it. This is why A.I. is more than just a buzzword, yet must be used carefully.</p>
-         <p style="margin-top: 20px;">
-                <em>Want to learn more? Check out the official <a href="https://pmc.ncbi.nlm.nih.gov/articles/11333562" target="_blank">Tesla Website</a>.</em>
-            </p>
+            <section class="feature-conclusion">
+                <h3>Conclusion</h3>
+                <p>Healthcare shows both sides of A.I, not just benefits, but also risks that need human oversight than fully believing it. This is why A.I. is more than just a buzzword, yet must be used carefully.</p>
+                <p class="feature-resource"><em>Want to learn more? Check out the official <a href="https://pmc.ncbi.nlm.nih.gov/articles/11333562" target="_blank" rel="noopener noreferrer">Tesla Website</a>.</em></p>
+            </section>
         </section>
     </main>
-    <nav>
-        <a href="Application2-autocars-eg-tesla.html">Next Page</a>
-        <a href="index.html">Last Page</a>
-        <a href="index.html">Back to Home</a>
-        <a href="Regi-Enquirey-form.html">Ask Us Anything</a>
+    <nav class="page-navigation" aria-label="Page navigation">
+        <a class="previous-link" href="index.html"><span aria-hidden="true">&larr;</span> Previous: Home</a>
+        <a class="home-link" href="index.html">All Topics</a>
+        <a class="next-link" href="application2-autocars-eg-tesla.html">Next: Autonomous Cars <span aria-hidden="true">&rarr;</span></a>
+        <a class="contact-link" href="Regi-Enquirey-form.html">Ask a Question</a>
     </nav>
     <footer>
         <p>&copy; 2026 ITFS Web Programming Fundamentals Group Assignment.</p>
