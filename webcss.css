@@ -118,6 +118,22 @@ header {
     border-radius: 16px;
 }
 
+.impact-hero {
+    margin: 0 0 28px;
+    overflow: hidden;
+    border: 1px solid rgba(143, 230, 245, 0.3);
+    border-radius: 12px;
+    background: #0b2933;
+}
+
+.impact-hero img {
+    display: block;
+    width: 100%;
+    height: clamp(220px, 30vw, 340px);
+    object-fit: cover;
+    object-position: center 45%;
+}
+
 .impact-section + .impact-section {
     margin-top: 32px;
 }
@@ -725,6 +741,10 @@ footer {
     .impact-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 12px;
+    }
+
+    .impact-hero img {
+        height: 220px;
     }
 
     .feature-card,
